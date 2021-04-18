@@ -552,4 +552,11 @@ body{
         padding: 0 5px;
     }
 }
-
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    .about .image img{
+        width: 90%;
+        height: auto;
+    }
