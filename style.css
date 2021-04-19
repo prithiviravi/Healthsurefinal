@@ -74,7 +74,7 @@ body{
 }
 
 .navbar-menu a:hover{
-    color: burlywood;
+    color: #DA1c5c;
 }
 
 @media screen and (max-width: 980px){
@@ -560,3 +560,4 @@ body{
         width: 90%;
         height: auto;
     }
+}
