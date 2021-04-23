@@ -144,7 +144,7 @@ body{
     50% { left: -200%; }
     70% { left: -200%; }
     75% { left: -300%; }
-    95% { left: -300%; }
+    95% { left: -400%; }
     100% { left: -400%; }
 }
 
@@ -167,7 +167,7 @@ body{
 
 
 .about{
-    min-height: 350px;
+    min-height: 80vh;
     background: white;
     padding: 3rem;
     padding-top: 0rem;
@@ -190,11 +190,53 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .about-pic{
-    width: 150px;
+    width: 200px;
     padding-top: 5px;
     margin-left: 55px;
+}
+#slide1 { 
+	overflow: hidden; 
+}
+#slide1 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy1 infinite; 
+}
+#slide1 figure img { 
+	width: 20%; 
+	float: left; 
+	height:250px;
+}
+
+@keyframes slidy1 {
+    0% {
+        left: 0;
+      }
+      20% {
+        left: 0%;
+      }
+      35% {
+        left: -100%;
+      }
+      60% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      85% {
+        left: -400%;
+      }
+      100%{
+          left:-400%;
+      }
 }
 
 .section-title{
@@ -216,7 +258,7 @@ body{
 
 }
 .about-text p{
-    font-size: 17px;
+    font-size: 22px;
     text-align: justify;
     line-height: 35px;
     margin-top: 15px;
@@ -234,7 +276,7 @@ body{
     left: 0;
     height: 20vh;
     top: -40%;
-    animation: 20s slider infinite;
+    animation: 60s slider infinite;
   }
   #slider figure img{
     width: 20%;
@@ -244,20 +286,23 @@ body{
     0% {
       left: 0;
     }
-    25% {
+    20% {
+      left: 0%;
+    }
+    35% {
       left: -100%;
     }
-    50% {
+    60% {
       left: -200%;
     }
-    70% {
-      left: -200%;
-    }
-    95% {
+    75% {
       left: -300%;
     }
-    100% {
+    85% {
       left: -400%;
+    }
+    100%{
+        left:-400%;
     }
   }
 
@@ -279,8 +324,14 @@ body{
       .contact form{
         width:95%;
     } 
-    .about-pic{
-        margin-left: 70px;
+    .about-text p{
+        font-size: 17px;
+        text-align: justify;
+        line-height: 35px;
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-right: 10px;
+        padding: 0 5px;
     }   
 }
 
