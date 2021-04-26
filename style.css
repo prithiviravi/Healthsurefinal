@@ -177,7 +177,7 @@ body{
 #slide1 figure img { 
 	width: 20%; 
 	float: left; 
-	height:250px;
+	height:auto;
 }
 
 @keyframes slidy1 {
@@ -277,14 +277,14 @@ body{
         width: 500%;
         margin: 0;
         left: 0;
-        height: 40vh;
+        height: auto;
         top: -40%;
         animation: 20s slider infinite;
       }
       #slider figure img{
         width: 20%;
         float: left;
-        min-height: 40vh;
+        min-height: auto;
       }
       .contact form{
         width:95%;
@@ -387,8 +387,8 @@ body{
     flex-wrap: wrap;
 }
 
-.contact form .inputBox input, .contact form textarea{
-    height: 4rem;
+.contact form .inputBox input, .contact form textarea, select{
+    height: 4.5rem;
     width: 49%;
     padding: 0 1rem;
     margin:1rem 0;
@@ -401,10 +401,13 @@ body{
     border-color: #feffaf;;
 }
 
-.contact form .inputBox input::placeholder, .contact form textarea::placeholder{
+.contact form .inputBox input::placeholder, .contact form textarea::placeholder, 
+{
     color: #ccc;
 }
-
+select option:disabled{
+    color: #ccc;
+}
 .contact form  .contact form textarea:focus{
     border-color: #feffaf;
 }
