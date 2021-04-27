@@ -175,7 +175,7 @@ body{
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: slidy1 30s infinite; 
+  animation: slidy1 15s infinite; 
 }
 #slide1 figure img { 
 	width: 20%; 
