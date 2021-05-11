@@ -235,7 +235,7 @@ body{
     left: 0;
     height: 20vh;
     top: -40%;
-    animation:slider 60s infinite;
+    animation:slider 100s infinite;
   }
   #slider figure img{
     width: 20%;
